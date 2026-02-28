@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashdark X</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo-area">
+            <div class="logo-icon"></div>
+            Dashdark X
+        </div>
+        
+        <div class="search-box">
+            <span style="color: var(--text-muted)">🔍</span>
+            <input type="text" placeholder="Search for...">
+        </div>
+
+        <div class="nav-group">
+            <a href="#" class="nav-item"><span>🏠</span> Dashboard</a>
+            <div style="padding: 10px 24px; color: var(--text-muted); font-size: 12px; margin-top: 10px;">All pages</div>
+            <a href="#" class="nav-item active"><span>📊</span> Reports</a>
+            <a href="#" class="nav-item"><span>📦</span> Products</a>
+            <a href="#" class="nav-item"><span>📋</span> Task</a>
+        </div>
+
+        <div class="nav-group">
+            <a href="#" class="nav-item"><span>⭐</span> Features</a>
+            <a href="#" class="nav-item"><span>👤</span> Users</a>
+            <a href="#" class="nav-item"><span>💲</span> Pricing</a>
+            <a href="#" class="nav-item"><span>🧩</span> Integrations</a>
+        </div>
+
+        <div class="nav-group" style="margin-top: auto;">
+            <a href="#" class="nav-item"><span>⚙️</span> Settings</a>
+            <a href="#" class="nav-item"><span>📄</span> Template pages</a>
+        </div>
+
+        <div class="user-profile">
+            <div class="avatar" style="background: url('https://i.pravatar.cc/100') center/cover;"></div>
+            <div class="user-info">
+                <h4>John Carter</h4>
+                <p>Account settings</p>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="header-title">
+                <h1>Welcome back, John</h1>
+                <p>Measure your advertising ROI and report website traffic.</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-outline">Export data ↓</button>
+                <button class="btn btn-primary">Create report</button>
+            </div>
+        </header>
+
+        <section class="metrics-grid">
+            <div class="card">
+                <div class="card-header">
+                    <span>👁 Pageviews</span>
+                    <span>...</span>
+                </div>
+                <div class="card-value">
+                    <h2>50.8K</h2>
+                    <span class="badge up">28.4% ↗</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <span>👤 Monthly users</span>
+                    <span>...</span>
+                </div>
+                <div class="card-value">
+                    <h2>23.6K</h2>
+                    <span class="badge down">12.6% ↘</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span>⊕ New sign ups</span>
+                    <span>...</span>
+                </div>
+                <div class="card-value">
+                    <h2>756</h2>
+                    <span class="badge up">3.1% ↗</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span>★ Subscriptions</span>
+                    <span>...</span>
+                </div>
+                <div class="card-value">
+                    <h2>2.3K</h2>
+                    <span class="badge up">11.3% ↗</span>
+                </div>
+            </div>
+        </section>
+
+
+<section class="charts-grid">
+            <div class="main-chart">
+                <div class="chart-top">
+                    <div class="chart-title">
+                        <p>Total revenue</p>
+                        <h2>$240.8K <span class="badge up" style="font-size: 14px;">24.6% ↗</span></h2>
+                    </div>
+                    <div style="display: flex; gap: 20px; align-items: center;">
+                        <div class="chart-legend">
+                            <div class="legend-item"><div class="dot purple"></div> Revenue</div>
+                            <div class="legend-item"><div class="dot blue"></div> Expenses</div>
+                        </div>
+                        <div class="btn btn-outline" style="padding: 6px 12px; font-size: 12px;">📅 Jan 2024 - Dec 2024 ⌄</div>
+                    </div>
+                </div>
+
+                <div class="chart-area">
+                    <div class="grid-lines">
+                        <div class="grid-line"><span>250K</span></div>
+                        <div class="grid-line"><span>200K</span></div>
+                        <div class="grid-line"><span>150K</span></div>
+                        <div class="grid-line"><span>100K</span></div>
+                        <div class="grid-line"><span>50K</span></div>
+                        <div class="grid-line"><span>25K</span></div>
+                        <div class="grid-line" style="border: none;"><span>0K</span></div>
+                    </div>
+                    
+                    <svg class="svg-chart" viewBox="0 0 800 250" preserveAspectRatio="none">
+                        <path d="M0,220 C100,220 150,250 250,150 C350,50 450,150 550,50 C650,-50 750,180 800,160" 
+                              fill="none" stroke="var(--accent-blue)" stroke-width="2" />
+                        <path d="M0,250 C150,250 250,100 400,100 C500,100 600,0 800,20" 
+                              fill="none" stroke="var(--accent-purple)" stroke-width="2" />
+                        <path d="M0,250 C150,250 250,100 400,100 C500,100 600,0 800,20 L800,250 L0,250 Z" 
+                              fill="url(#purpleGradient)" opacity="0.2" />
+                        
+                        <circle cx="400" cy="100" r="4" fill="var(--bg-main)" stroke="var(--accent-purple)" stroke-width="2"/>
+                        
+                        <defs>
+                            <linearGradient id="purpleGradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="var(--accent-purple)" />
+                                <stop offset="100%" stop-color="transparent" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                
+                <div class="x-axis">
+                    <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+                </div>
+            </div>
+
+            <div class="side-charts">
+                <div class="card" style="height: 50%;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                            <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 4px;">📈 Total profit</p>
+                            <h2>$144.6K <span class="badge up">28.5% ↗</span></h2>
+                        </div>
+                    </div>
+                    
+                    <div class="bar-chart-container">
+                        <div class="bar" style="height: 40%"></div><div class="bar" style="height: 60%"></div>
+                        <div class="bar" style="height: 50%"></div><div class="bar" style="height: 70%"></div>
+
+<div class="bar" style="height: 30%"></div><div class="bar" style="height: 80%"></div>
+                        <div class="bar" style="height: 55%"></div><div class="bar" style="height: 45%"></div>
+                        <div class="bar" style="height: 90%"></div><div class="bar" style="height: 60%"></div>
+                        <div class="bar" style="height: 50%"></div><div class="bar" style="height: 85%"></div>
+                        <div class="bar" style="height: 30%"></div><div class="bar" style="height: 70%"></div>
+                        <div class="bar" style="height: 65%"></div><div class="bar" style="height: 55%"></div>
+                        <div class="bar" style="height: 80%"></div><div class="bar" style="height: 40%"></div>
+                    </div>
+                    <div class="x-axis" style="margin-top: 5px;">
+                        <span>12 AM</span><span>8 AM</span><span>4 PM</span><span>11 PM</span>
+                    </div>
+                </div>
+
+                <div class="card" style="height: 50%;">
+                    <div>
+                        <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 4px;">⏱ Total sessions</p>
+                        <h2>400 <span class="badge up">16.8% ↗</span></h2>
+                    </div>
+                    
+                    <div style="height: 80px; position: relative; margin-top: 15px;">
+                        <svg width="100%" height="100%" viewBox="0 0 300 80" preserveAspectRatio="none">
+                            <path d="M0,70 L30,50 L60,60 L90,40 L120,60 L150,40 L180,20 L210,60 L240,60 L270,40 L300,60" 
+                                  fill="none" stroke="var(--accent-purple)" stroke-width="2" />
+                        </svg>
+                    </div>
+                     <div class="x-axis" style="margin-top: 5px;">
+                        <span>12 AM</span><span>8 AM</span><span>4 PM</span><span>11 PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
